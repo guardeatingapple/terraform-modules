@@ -1,4 +1,5 @@
-
+## Usage example
+```
 module "dnsdbbase" {
   source             = "../terraform-fortios-system-dnsdatabase"
   dnsdatabase_config = local.dns_zones
@@ -34,3 +35,4 @@ locals {
     }
   ]
 }
+```

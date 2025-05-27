@@ -1,4 +1,5 @@
-
+## Usage example
+```
 
 module "firewall_address" {
   source        = "../modules/terraform-fortios-firewall-address"
@@ -26,3 +27,4 @@ locals {
     }
   ]
 }
+```

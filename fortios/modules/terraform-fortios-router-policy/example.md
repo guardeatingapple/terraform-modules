@@ -1,4 +1,5 @@
-
+## Usage example
+```
 module "fortios_router_policy" {
   source        = "../modules/terraform-fortios-router-policy"
   for_each      = { for item in local.fortios_router_policy : item.seq_num => item }
@@ -30,3 +31,4 @@ locals {
 
   ]
 }
+```
