@@ -1,17 +1,4 @@
-<!-- terraform {
-  required_providers {
-    fortios = {
-      source  = "fortinetdev/fortios"
-      version = "1.22.0"
-    }
-  }
-}
 
-provider "fortios" {
-  hostname = "<ip>"
-  token    = "<token>"
-  insecure = "true"
-} -->
 
 module "firewall_address" {
   source        = "../modules/terraform-fortios-firewall-address"
