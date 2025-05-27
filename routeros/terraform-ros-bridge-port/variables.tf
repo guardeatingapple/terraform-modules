@@ -1,0 +1,32 @@
+variable "bridge_port_config" {
+  type = object({
+    auto_isolate            = optional(bool)
+    bpdu_guard              = optional(bool)
+    bridge                  = string
+    broadcast_flood         = optional(bool)
+    comment                 = optional(string)
+    disabled                = optional(bool)
+    edge                    = optional(string)
+    fast_leave              = optional(bool)
+    frame_types             = optional(string)
+    horizon                 = optional(string)
+    hw                      = optional(bool)
+    ingress_filtering       = optional(bool)
+    interface               = string
+    internal_path_cost      = optional(number)
+    learn                   = optional(string)
+    multicast_router        = optional(string)
+    mvrp_applicant_state    = optional(string)
+    mvrp_registrar_state    = optional(string)
+    path_cost               = optional(string)
+    point_to_point          = optional(string)
+    priority                = optional(string)
+    pvid                    = optional(number)
+    restricted_role         = optional(bool)
+    restricted_tcn          = optional(bool)
+    tag_stacking            = optional(bool)
+    trusted                 = optional(bool)
+    unknown_multicast_flood = optional(bool)
+    unknown_unicast_flood   = optional(bool)
+  })
+}
